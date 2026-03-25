@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f8fb;
+}
+
+.app-header {
+  background: #182848;
+  color: white;
+  padding: 1rem;
+}
+
+.page-content {
+  padding: 1.25rem;
+}
+
+#copilotkit-root {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+}

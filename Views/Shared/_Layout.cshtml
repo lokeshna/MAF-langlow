@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAF + Langflow Bot</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@copilotkit/react-ui@latest/dist/styles.css" />
+</head>
+<body>
+    <header class="app-header">
+        <h1>ASP.NET 8 MVC + Microsoft Agent Framework + Langflow</h1>
+    </header>
+
+    <main class="page-content">
+        @RenderBody()
+    </main>
+
+    <div id="copilotkit-root"></div>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18?dev",
+        "react-dom/client": "https://esm.sh/react-dom@18/client?dev",
+        "@copilotkit/react-core": "https://esm.sh/@copilotkit/react-core@1",
+        "@copilotkit/react-ui": "https://esm.sh/@copilotkit/react-ui@1"
+      }
+    }
+    </script>
+    <script type="module" src="~/js/copilotkit-bot.js"></script>
+</body>
+</html>
